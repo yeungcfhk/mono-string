@@ -19,6 +19,10 @@ class MonoString
         // Returns the length of the string
         size_t size() const;
         size_t length() const;
+
+        // Finds the substring s in this MonoString
+        size_t find(const char* s) const;
+        size_t find(const char* s, size_t pos) const;
     private:
         char* _str;
         size_t _len;
